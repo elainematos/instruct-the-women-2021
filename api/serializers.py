@@ -67,9 +67,9 @@ class ProjectSerializer(serializers.ModelSerializer):
         leng_pack = len(packages)
         i = 0
         while i < leng_pack:
-            if ( packages)
-            package = PackageRelease.objects.create(name=packages[i]['name'], version=packages[i]['version'], project=projeto)
-            i += 1
+            if ( packages):
+                package = PackageRelease.objects.create(name=packages[i]['name'], version=packages[i]['version'], project=projeto)
+                i += 1
         
         projeto.save()
         #print(packages[0]['version'])
